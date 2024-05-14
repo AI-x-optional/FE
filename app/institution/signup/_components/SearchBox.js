@@ -31,10 +31,10 @@ export default function SearchBox(props) {
                 <div className="flex flex-col h-full">
                     <div className = "basis-1/10 flex">
                         <input 
-                            className="grow  rounded-md border-0 shadow-sm mr-3 py-1.5 pl-4 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            className="grow  rounded-md border-0 shadow-sm mr-3 py-1.5 pl-4 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6"
                             name="content" placeholder="기관명 입력" onChange={onChangeContent}/>
                         <button 
-                            className ="w-20 rounded-md bg-indigo-600 px-3 py-1.5 text-sm leading-6 text-white"
+                            className ="w-20 rounded-md bg-blue-500 px-3 py-1.5 text-sm leading-6 text-white"
                             type="button" onClick={onclickSearch}>
                                 검색
                         </button>
@@ -64,7 +64,7 @@ export default function SearchBox(props) {
                         
                     </div>
                     <div className = "basis-1/10 float-right text-end">
-                        <button type="button" className = "font-semibold text-sm text-indigo-600 hover:text-indigo-500">
+                        <button type="button" className = "font-semibold text-sm text-blue-500 hover:text-blue-400">
                             찾고 있는 기관이 없다면?
                         </button>
                     </div>             
