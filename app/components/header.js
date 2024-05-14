@@ -1,5 +1,5 @@
 "use client";
-import Link from 'next/link';
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
@@ -13,9 +13,15 @@ export default function Header() {
             <img src="/Logo.png" alt="Logo" className="h-8" />
           </Link>
           <nav className="flex gap-8">
-            <Link href="/bootcamp" className={`text-gray-800 no-underline px-2 py-1 rounded ${pathname === '/bootcamp' ? 'bg-gray-100' : 'bg-white'}`}>부트캠프 정보</Link>
-            <Link href="/community" className={`text-gray-800 no-underline px-2 py-1 rounded ${pathname === '/community' ? 'bg-gray-100' : 'bg-white'}`}>커뮤니티</Link>
-            <Link href="/qna" className={`text-gray-800 no-underline px-2 py-1 rounded ${pathname === '/qna' ? 'bg-gray-100' : 'bg-white'}`}>QnA</Link>
+            <Link href="/bootcamp" className={`text-gray-800 no-underline px-2 py-1 rounded ${pathname === "/bootcamp" ? "bg-gray-100" : "bg-white"}`}>
+              부트캠프 정보
+            </Link>
+            <Link href="/community" className={`text-gray-800 no-underline px-2 py-1 rounded ${pathname === "/community" ? "bg-gray-100" : "bg-white"}`}>
+              커뮤니티
+            </Link>
+            <Link href="/qna" className={`text-gray-800 no-underline px-2 py-1 rounded ${pathname === "/qna" ? "bg-gray-100" : "bg-white"}`}>
+              QnA
+            </Link>
           </nav>
         </div>
         <div className="flex items-center gap-4">
@@ -27,8 +33,20 @@ export default function Header() {
             </span>
             <input type="text" placeholder="Search" className="py-2 px-4 w-full focus:outline-none" />
           </div>
-          <Link href="/" className="text-2xl text-gray-800 no-underline">🔔</Link>
-          <Link href="/" className="text-2xl text-gray-800 no-underline">👤</Link>
+          <span className="sm:ml-3">
+            <Link href="/">
+              <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
+                Login
+              </button>
+            </Link>
+          </span>
+          <span className="sm:ml-3">
+            <Link href="/">
+              <button type="button" className="inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                SignUp
+              </button>
+            </Link>
+          </span>
         </div>
       </div>
     </header>
