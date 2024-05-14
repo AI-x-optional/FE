@@ -24,8 +24,8 @@ export default function Signup() {
     }
 
     return (<>
-        <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-            <h2 className="mt-10 text-center text-xl font-bold leading-9 tracking-tight text-gray-900  h-8">
+        <div className="sm:mx-auto sm:w-full sm:max-w-sm px-6 py-12 lg:px-8">
+            <h2 className="text-center text-xl font-bold leading-9 tracking-tight text-gray-900  h-8">
                 기관 회원가입
             </h2>
             <form onSubmit={onSubmitHandler}>
@@ -87,16 +87,17 @@ export default function Signup() {
                 </div>                                      
                 
                 {/* 취소, 완료 버튼 영역 */}
-                <div className="mt-6 flex items-center justify-end gap-x-6">
+                <div className="my-6 flex items-center justify-end gap-x-6">
                     <button 
                         type="button"
                         className="text-sm font-semibold leading-6 text-gray-900"
+                        onClick={()=>{router.push('/institution')}}
                     >
                         취소 
                     </button>
                     <button 
                         type="submit"
-                        className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        className="rounded-md bg-blue-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
                     >
                         완료
                     </button>
