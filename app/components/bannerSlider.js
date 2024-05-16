@@ -6,10 +6,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-export default function BannerSwiper() {
+export default function BannerSlider() {
     SwiperCore.use([Navigation, Pagination, Scrollbar, Autoplay]);
     return (
-      <div className="swiper-container">
         <Swiper
           loop={true}
           spaceBetween={30} 
@@ -30,7 +29,6 @@ export default function BannerSwiper() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
     );
   }
   
