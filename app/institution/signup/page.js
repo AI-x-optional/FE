@@ -19,7 +19,7 @@ export default function Signup() {
         }
 
         console.log(formData);
-        router.push('/institution');
+        router.push('/institution/login');
 
     }
 
