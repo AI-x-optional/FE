@@ -15,8 +15,8 @@ export default async function BootCampDetail({ params }) {
     return (
         <div>
             <div className="mx-40 py-8">
-                <div className="divide-x">
-                    <div className="divide-y pr-12">
+                <div className="flex divide-x">
+                    <div className="w-3/4 divide-y pr-12">
                         {/**부트캠프 제목*/}
                         <div className="space-y-4 pb-4">
                             <div className="text-4xl font-bold">메타버스 아카데미 3기</div>
@@ -37,6 +37,21 @@ export default async function BootCampDetail({ params }) {
                                 </div>
                             </div>
                             ))}
+                        </div>
+                    </div>
+                    <div className="w-1/4 pl-12">
+                        <div className="sticky top-8">
+                            <div className="rounded-lg bg-white p-4 border border-gray-300 shadow">
+                                <div className="space-y-4">
+                                    <img className="rounded-lg" src="/image.jpeg"></img>
+                                    <button type="button" className="w-full items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                        신청하기
+                                    </button>
+                                    <div className="">
+                                        부트캠프 요약정보
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
