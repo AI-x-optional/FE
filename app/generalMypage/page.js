@@ -1,6 +1,6 @@
 "use client"
 
-import Sidebar from "./_components/layouts/sidebar.js"
+import Sidebar from "../components/mypageSidebar.js"
 import MypageSearchBtn from "./_components/mypageSearchBtn.js"
 import { useState } from "react";
 

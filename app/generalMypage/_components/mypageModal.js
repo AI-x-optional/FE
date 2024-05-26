@@ -1,6 +1,26 @@
+import { useEffect } from "react";
+
 export default function MypageModal(props) {
 
-    const {onClickModal} = props;
+    const { onClickModal } = props;
+    
+    // 모달 창 켜졌을 때 배경 스크롤 방지 & 위치 고정
+    useEffect(() => {
+
+        document.body.style.cssText = `
+          position: fixed; 
+          top: -${window.scrollY}px;
+          overflow-y: scroll;
+          width: 100%;`;
+
+        // top 위치를 지정해 배경 페이지가 위로 올라가지 않게
+        return () => {
+          const scrollY = document.body.style.top;
+          document.body.style.cssText = '';
+          window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
+        };
+      }, []);
+      
 
     return (
         <div onClick={onClickModal} className="pl-64 h-screen w-full fixed left-0 top-0 flex justify-center items-center text-center">
