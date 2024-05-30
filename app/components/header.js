@@ -34,7 +34,7 @@ export default function Header() {
             <input type="text" placeholder="Search" className="py-2 px-4 w-full focus:outline-none" />
           </div>
           <span className="sm:ml-3">
-            <Link href="/">
+            <Link href="/login-select">
               <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
                 Login
               </button>

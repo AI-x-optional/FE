@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import BannerSlider from './components/bannerSlider';
+
 
 export default function Home() {
   return (
     <div className="container mx-auto p-5">
-      <div className="bg-blue-500 text-white text-center py-4 mb-8">
-        <h1 className="text-lg font-bold">광고 배너</h1>
+      <div className="py-4 mb-8">
+        <BannerSlider/>
       </div>
 
       <div className="grid grid-cols-2 gap-8">
